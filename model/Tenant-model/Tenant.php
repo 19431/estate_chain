@@ -4,7 +4,7 @@
  * Date: 3/31/2018
  * Time: 6:55 PM
  */
-require_once 'processes.php';
+require_once '../manager-model/processes.php';
 class Tenant implements EstateProcesses
 {
     use model;

@@ -2,7 +2,7 @@
 /**
 * 
 */
-require_once "../../processes.php";
+require_once "../manager-model/processes.php";
 class Vendor implements EstateProcesses
 {
     use model;      //values and functions imported from trait 'model'. See model for more info

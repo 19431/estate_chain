@@ -4,7 +4,7 @@
  * Date: 3/31/2018
  * Time: 6:53 PM
  */
-require_once "../Tenant-model/processes.php";
+require_once "./processes.php";
 require_once "../Tenant-model/Tenant.php";
 class PropertyManager implements EstateProcesses
 {
