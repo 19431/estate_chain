@@ -10,20 +10,21 @@ class PaymentController{
     private $payment;
 
     public function __construct(){
-        $price = $_POST[''];
-        $paidDate = $_POST[''];
+        $price = $_POST['amount'];
+        $paidDate = $_POST['date'];
         $leaseIn = $_POST['leaseID'];
         $lease = "select ID from leases where ID = '$leaseIn';";    //get lease data from db
         $this->payment = new monthlyPayment($price,  $paidDate, $lease);
     }
 
     public function handle_payments(){
-
+        //TODO
     }
 
     public function showError($title, $message) {
         include '../views/error.php';
 
-}
+    }
 
+    /*TODO*/
 }

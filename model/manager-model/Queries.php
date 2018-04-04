@@ -5,12 +5,12 @@
  * Date: 4/1/2018
  * Time: 5:38 AM
  */
-require_once "DBconnect.php";
+require_once "DB.php";
 require_once "manager_services/php/PropertyManager.php";
 
 trait Queries
 {
-    use DBconnect;
+    use DB;
 
     public function get_manager(){
         $mysqli = $this->connect_db();      //make a database connection object
